@@ -1,3 +1,217 @@
-h1{
-    color: blue;
+
+/* Primary font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-primary {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Secondary Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway-secondary {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+/* Shared Style */
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header, .banner{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.orange{
+    color: #FEA301;
+}
+
+.sky-blue{
+    color: #01ACFD;
+}
+
+.cyan{
+    color: #05D4DF;
+}
+
+.purple{
+    color: #5D58EF;
+}
+
+.primary-btn{
+    background-color: #111111;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 47px;
+}
+
+
+
+
+/* Navbar style */
+.hamburger{
+    display: none;
+}
+
+.nav-items{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item{
+    list-style: none;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    gap: 32px;
+}
+
+.nav-title{
+    margin-left: 11px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.brand{
+    align-items: center;
+}
+.brand img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#home{
+    font-weight: bold;
+}
+
+.nav-button{
+    background-color: #FEA301;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 60.5px;
+}
+
+
+/* Banner */
+.banner{
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-content{
+    max-width: 640px;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.banner-desc{
+    font-size: 1.25rem;
+    color: #111111;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+
+
+
+/* Responsive for small device */
+@media screen and (max-width: 576px){
+    /* Navbar */
+    .nav-links{
+        display: none;
+    }
+    .nav-title{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    header{
+        border: 1px solid #FEA301;
+        padding: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Banner */
+    .banner{
+        padding: 8px 16px 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-title, .banner-desc, .banner-btn{
+        text-align: center;
+    }
+}
+
+/* Responsive for medium device */
+@media screen and (min-width:576px) and (max-width:992px){
+        /* Navbar */
+        .nav-title{
+            display: none;
+        }
+        .nav-button{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
+        header{
+            border: 1px solid #FEA301;
+            padding: 12px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        /* Banner */
+        .banner{
+            padding: 8px 16px 20px;
+        }
+        .banner{
+            flex-direction: column-reverse;
+        }
+        .banner-title, .banner-desc, .banner-btn{
+            text-align: center;
+        }
+
+
 }
