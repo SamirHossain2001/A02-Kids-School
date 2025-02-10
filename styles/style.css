@@ -237,6 +237,68 @@ header, .banner{
 }
 
 
+/* Footer */
+footer{
+    max-width: none;
+}
+.footer-container{
+    padding: 150px 140px 174px 140px;
+    background-color: #01ACFD;
+}
+.footer-container>div{
+    flex: 1;
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-link, .footer-title, .footer-1-desc, .about-school, .keep-in-touch{
+    color: #FFFFFF;
+}
+
+.footer-title{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.footer-img-title img{
+    width: 100%;
+    height: 100%;
+}
+.footer-img-title{
+    align-items: center;
+}
+.footer-1-desc{
+    font-size: 1.25rem;
+}
+.about-school{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.footer-item{
+    margin-bottom: 20px;
+}
+.footer-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.keep-in-touch{
+    font-weight: bold;
+    font-size: 1.625rem;
+}
+
+.footer-2{
+    margin-left: 172px;
+}
+
+.footer-3{
+    margin-left: 143px;
+}
+
 /* Responsive for small device */
 @media screen and (max-width: 576px){
     /* Navbar */
@@ -330,9 +392,5 @@ header, .banner{
         flex-direction: column;
         justify-content: center;
     }
-    .curriculam-title{
-        font-size: 1.625rem;
-    }
-
 
 }
