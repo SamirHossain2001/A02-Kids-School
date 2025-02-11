@@ -299,6 +299,75 @@ footer{
     margin-left: 143px;
 }
 
+
+/* Our stories */
+.our-stories{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../assets/bg.png),
+    linear-gradient(to top, rgba(254, 163, 1, 0.3), #FFFFFF);
+    height: 1018px;
+    flex-direction: column;
+    align-items: center;
+}
+.story-title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 2.875rem;
+}
+.story-cards{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1160px;
+    /* background-color: slateblue; */
+}
+.story-cards > div{
+    flex: 1;
+}
+.story-card-large{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.story-card-large > img{
+    width: 100%;
+}
+.story-card-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 58.63px;
+    margin-bottom: 47.93px;
+    margin-left: 38.35px;
+    margin-right: 38.35px;
+}
+.story-card-desc{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666666;
+    margin: 0;
+    margin-bottom: 34.52px;
+    line-height: 28.8px;
+    margin-left: 38.35px;
+}
+.card-1-img{
+    position: relative;
+}
+.story-card-date{
+    display: block;
+    border-radius: 46px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 14px 19px;
+    border: 0;
+    background-color: #3CD8E8;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -20px;
+    left: 38.5px;
+}
+
+
 /* Responsive for small device */
 @media screen and (max-width: 576px){
     /* Navbar */
@@ -355,6 +424,21 @@ footer{
     .curriculam-title{
         font-size: 1.625rem;
     }
+    /* Footer */
+    .footer-container{
+        flex-direction: column;
+        padding: 65px 16px;
+    }
+    .footer-img-title{
+        max-width: 251px;
+    }
+    .footer-2{
+        margin-left: 0px;
+    }
+    
+    .footer-3{
+        margin-left: 0px;
+    }
 }
 
 /* Responsive for medium device */
@@ -387,10 +471,25 @@ footer{
             text-align: center;
         }
 
-    /* standard-curriculam */
-    .curriculam-container{
-        flex-direction: column;
-        justify-content: center;
-    }
+        /* standard-curriculam */
+        .curriculam-container{
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* Footer */
+        .footer-container{
+            flex-direction: column;
+            padding: 65px 16px;
+        }
+        .footer-img-title{
+            max-width: 251px;
+        }
+        .footer-2{
+            margin-left: 0px;
+        }
+        
+        .footer-3{
+            margin-left: 0px;
+        }
 
 }
