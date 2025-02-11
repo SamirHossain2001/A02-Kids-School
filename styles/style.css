@@ -306,9 +306,9 @@ footer{
     padding-bottom: 60px;
     background-image: url(../assets/bg.png),
     linear-gradient(to top, rgba(254, 163, 1, 0.3), #FFFFFF);
-    height: 1018px;
     flex-direction: column;
     align-items: center;
+
 }
 .story-title{
     margin: 0;
@@ -319,6 +319,7 @@ footer{
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1160px;
+    gap: 19px;
     /* background-color: slateblue; */
 }
 .story-cards > div{
@@ -329,7 +330,7 @@ footer{
     border-radius: 16px;
     overflow: hidden;
 }
-.story-card-large > img{
+.card-1-img > img{
     width: 100%;
 }
 .story-card-title{
@@ -349,6 +350,7 @@ footer{
     margin-bottom: 34.52px;
     line-height: 28.8px;
     margin-left: 38.35px;
+    margin-right: 38.35px;
 }
 .card-1-img{
     position: relative;
@@ -364,9 +366,41 @@ footer{
     color: #FFFFFF;
     position: absolute;
     bottom: -20px;
-    left: 38.5px;
+    left: 37px;
 }
-
+.card-2-img{
+    position: relative;
+}
+.story-card-small{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+.small-card-container{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.card-2-img > img{
+    width: 100%;
+}
+.small-card-title{
+    font-weight: bold;
+    font-size: 0.94rem;
+    line-height: 28.8px;
+    margin-top: 30px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+.small-card-date{
+    background-color: #95B226;
+    padding: 10px 19px;
+    left: 37px;
+    bottom: -15px;
+}
+#card-3{
+    background-color: #5D58F0;
+}
 
 /* Responsive for small device */
 @media screen and (max-width: 576px){
@@ -424,6 +458,28 @@ footer{
     .curriculam-title{
         font-size: 1.625rem;
     }
+
+    /* Our stories */
+    .story-card-large{
+        display: none;
+    }
+    .story-card-small{
+        padding-left: 16px;;
+        padding-right: 16px;
+    }
+    .small-card-title{
+        font-size: 0.6rem;
+        line-height: 17px;
+        margin-top: 22px;
+        margin-left: 22px;
+        margin-right: 20px;
+    }
+    .small-card-date{
+        font-size: 0.6rem;
+        bottom: -10px;
+        left: 22px;
+    }
+
     /* Footer */
     .footer-container{
         flex-direction: column;
@@ -432,11 +488,7 @@ footer{
     .footer-img-title{
         max-width: 251px;
     }
-    .footer-2{
-        margin-left: 0px;
-    }
-    
-    .footer-3{
+    .footer-2, .footer-3{
         margin-left: 0px;
     }
 }
@@ -476,6 +528,13 @@ footer{
             flex-direction: column;
             justify-content: center;
         }
+
+        /* Our stories */
+        .story-cards{
+            flex-direction: column;
+            padding: 50px;
+        }
+
         /* Footer */
         .footer-container{
             flex-direction: column;
@@ -484,12 +543,7 @@ footer{
         .footer-img-title{
             max-width: 251px;
         }
-        .footer-2{
+        .footer-2, .footer-3{
             margin-left: 0px;
         }
-        
-        .footer-3{
-            margin-left: 0px;
-        }
-
 }
