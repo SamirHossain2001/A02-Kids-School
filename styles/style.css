@@ -395,7 +395,7 @@ footer{
 }
 
 .footer-2{
-    margin-left: 172px;
+    margin-left: 170px;
 }
 
 .footer-3{
@@ -404,16 +404,60 @@ footer{
 
 
 /* marquee */
-
 .announcement-bar {
-    background-color: #FEA301; /* Orange theme */
+    background-color: #FEA301;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
     padding: 15px 0;
     white-space: nowrap;
     overflow: hidden;
+    display: block;
 }
+
+/* Hover */
+.nav-button:hover, 
+.primary-btn:hover, 
+.curr-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #01ACFD;
+}
+
+.curr-card:hover, 
+.story-card-large:hover, 
+.small-card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer-link:hover{
+    border-bottom: 2px solid white;
+}
+
+.card-1 .card-link:hover{
+    border-bottom: 2px solid #64C8FF;
+}
+.card-2 .card-link:hover{
+    border-bottom: 2px solid #F0AA00;
+}
+.card-3 .card-link:hover{
+    border-bottom: 2px solid #8700FF;
+}
+
+.nav-items .orange:hover{
+    border-bottom: 3px solid #FEA301;
+}
+.nav-items .sky-blue:hover{
+    border-bottom: 3px solid #01ACFD;
+}
+.nav-items .cyan:hover{
+    border-bottom: 3px solid #05D4DF;
+}
+.nav-items .purple:hover{
+    border-bottom: 3px solid #5D58EF;
+}
+
 
 /* Responsive for small device */
 @media screen and (max-width: 576px){
